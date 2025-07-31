@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
     --primary-color: #ED5C24;
     --secondary-color: #EFEFEF;
@@ -9,4 +11,40 @@
     box-sizing: border-box;
     vertical-align: baseline;
     list-style: none;
+}
+
+body {
+    font-family: Inter, sans-serif;
+}
+
+.header {
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.header-logo {
+    height: 61.7px;
+}
+
+.menu-principal {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color)
+}
+
+@media (max-width: 768px) {
+    .menu-principal {
+        display: none;
+    }
 }
