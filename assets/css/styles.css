@@ -1,9 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-:root {
-    --primary-color: #ED5C24;
-    --secondary-color: #EFEFEF;
-    --tertiary-color: #5f5f5f;
+:root, :root[data-theme='light'] {
+    --primary-color: #FFFFFF;
+    --secondary-color: #EE7F26;
+    --tertiary-color: #000000;
+
+    --odd-section-background: var(--secondary-color);
+    --odd-section-text: var(--primary-color);
+    --odd-section-button: var(--primary-color);
+    --odd-section-text-button: var(--tertiary-color);
+
+    --even-section-background: var(--primary-color);
+    --even-section-text: var(--tertiary-color);
+    --even-section-button: var(--secondary-color);
+    --even-section-text-button: var(--primary-color);
+}
+
+:root[data-theme='dark'] {
+    --primary-color: #000000;
+    --secondary-color: #ED5C24;
+    --tertiary-color: #FFFFFF;
+
+    --odd-section-background: var(--secondary-color);
+    --odd-section-text: var(--primary-color);
+    --odd-section-button: var(--primary-color);
+    --odd-section-text-button: var(--tertiary-color);
+
+    --even-section-background: var(--primary-color);
+    --even-section-text: var(--tertiary-color);
+    --even-section-button: var(--secondary-color);
+    --even-section-text-button: var(--primary-color);
+}
+
+html[data-theme='dark'] .header-logo {
+    filter:brightness(100) ;
 }
 
 * {
@@ -24,10 +54,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 50px;
+    background-color: var(--primary-color);
 }
 
 .header-logo {
     height: 61.7px;
+    
 }
 
 .menu-principal {
@@ -35,18 +67,18 @@ body {
     justify-content: flex-end;
     align-items: center;
     gap: 40px;
-    color: var(--primary-color);
     font-weight: 700;
 }
 
 
-a {
+.menu_link {
     text-decoration: none;
-    color: var(--primary-color)
+    color: var(--secondary-color)
 }
 
-a:hover {
-    color: var(--tertiary-color);
+.menu_link.active,
+.menu_link:hover {
+    color: var(--tertiary-color)
 }
 
 @media (max-width: 768px) {
@@ -55,6 +87,20 @@ a:hover {
     }
 
     .header-logo {
-        margin: auto;
+        margin: 0 auto;
     }
+}
+
+#toggleTheme{
+    color: var(--secondary-color);
+    font-size: 25px;
+    cursor: pointer;
+    transition: ease-in-out .4s;
+}
+
+#inline_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
 }
