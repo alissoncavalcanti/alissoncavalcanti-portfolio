@@ -81,16 +81,6 @@ body {
     color: var(--tertiary-color)
 }
 
-@media (max-width: 768px) {
-    .menu-principal {
-        display: none;
-    }
-
-    .header-logo {
-        margin: 0 auto;
-    }
-}
-
 #toggleTheme{
     color: var(--secondary-color);
     font-size: 25px;
@@ -103,4 +93,92 @@ body {
     flex-direction: row;
     align-items: center;
     gap: 40px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+#about {
+    background-color: var(--odd-section-background);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* display: grid;
+    grid-template-columns: 60% 34%; */
+    padding: 4rem;
+    gap: 3rem;
+}
+
+#foto-1 {
+    max-width: 40vw;
+}
+
+#titulo-h1-foto-1, #titulo-h3-foto-1, #texto-foto-1 {
+    color: var(--odd-section-text)
+}
+
+#secao-inicio-texto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    max-width: 50%;
+}
+
+button {
+    padding: 0.8rem 3rem;
+    border-radius: 50rem;
+    font-size: 0.8rem;
+    font-family: Inter;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+
+}
+
+#botao-foto-1 {
+    background-color: var(--odd-section-button);
+    margin: 1rem 0;
+}
+
+#text-botao-foto-1 {
+    color: var(--odd-section-text-button)
+}
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .menu-principal {
+        display: none;
+    }
+
+    .header-logo {
+        margin: 0 auto;
+    }
+
+    #about {
+        flex-direction: column;
+        align-items: start;
+        max-width: 100%;
+    }
+
+    #foto-1 {
+        max-width: 80vw;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #secao-inicio-texto {
+        max-width: 100%;
+    }
+    
 }
