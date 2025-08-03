@@ -36,6 +36,10 @@ html[data-theme='dark'] .header-logo {
     filter:brightness(100) ;
 }
 
+/* html[data-theme='dark'] .badge {
+    filter:brightness(100) ;
+} */
+
 * {
     margin: 0;
     padding: 0;
@@ -101,7 +105,7 @@ h1 {
     font-size: 4rem;
 }
 
-#about {
+#start {
     background-color: var(--odd-section-background);
     display: flex;
     flex-direction: row;
@@ -174,6 +178,67 @@ button {
     padding: 1rem;
 }
 
+#about {
+    background-color: var(--even-section-background);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    gap: 3rem;
+}
+
+#foto-2 {
+    max-width: 40vw;
+}
+
+#botao-foto-2 {
+    background-color: var(--even-section-button);
+    margin: 1rem 0;
+}
+
+#text-botao-foto-2 {
+    color: var(--even-section-text-button)
+}
+
+#secao-about-texto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    max-width: 50%;
+}
+
+#about-skills {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.about-skill {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    border-radius: 50rem;
+    padding: 0.4rem 2rem;
+    text-wrap: nowrap;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#titulo-h1-foto-2, #titulo-h3-foto-2, #texto-foto-2 {
+    color: var(--even-section-text)
+}
+#botao-foto-2 {
+    background-color: var(--even-section-button);
+    margin: 1rem 0;
+}
+
+#text-botao-foto-2 {
+    color: var(--even-section-text-button)
+}
+
 @media (max-width: 768px) {
 
     h1 {
@@ -188,7 +253,7 @@ button {
         margin: 0 auto;
     }
 
-    #about {
+    #start {
         flex-direction: column;
         align-items: start;
         max-width: 100%;
@@ -217,5 +282,15 @@ button {
     .badge-container {
     width: 7.5rem;
     height: 3rem;
+    }
+
+    #about {
+        flex-direction:column-reverse;
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    #secao-about-texto {
+        max-width: 100%;
     }
 }
