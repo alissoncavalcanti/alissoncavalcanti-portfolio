@@ -17,7 +17,7 @@
 }
 
 :root[data-theme='dark'] {
-    --primary-color: #000000;
+    --primary-color: #292939;
     --secondary-color: #ED5C24;
     --tertiary-color: #FFFFFF;
 
@@ -46,6 +46,7 @@ html[data-theme='dark'] .header-logo {
 
 body {
     font-family: Inter, sans-serif;
+    background-color: var(--primary-color);
 }
 
 .header {
@@ -149,10 +150,34 @@ button {
     color: var(--odd-section-text-button)
 }
 
+#badges {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem;
+    gap: 3rem;
+
+}
+
+.badge-container {
+    width: 15rem;
+    height: 6rem;
+    background-color: #FFFFFF;
+    border: 1px solid var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge {
+    width: 100%;
+    padding: 1rem;
+}
+
 @media (max-width: 768px) {
 
     h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .menu-principal {
@@ -167,6 +192,7 @@ button {
         flex-direction: column;
         align-items: start;
         max-width: 100%;
+        padding: 1rem;
     }
 
     #foto-1 {
@@ -180,5 +206,16 @@ button {
     #secao-inicio-texto {
         max-width: 100%;
     }
+
+    #badges {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
     
+    .badge-container {
+    width: 7.5rem;
+    height: 3rem;
+    }
 }
