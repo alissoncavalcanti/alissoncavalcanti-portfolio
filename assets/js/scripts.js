@@ -22,3 +22,14 @@ menuLinks.forEach(item => {
         item.classList.add("active");
     })
 })
+
+const accordionHeaders = document.querySelectorAll(".header-accordion");
+
+accordionHeaders.forEach(header => {
+    header.addEventListener("click", () => {
+        const accordionItem = header.parentElement;
+        const accordionActive = accordionItem.classList.contains("active");
+
+        accordionActive ? accordionItem.classList.remove("active") : accordionItem.classList.add("active");
+    })
+})
