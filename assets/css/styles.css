@@ -258,7 +258,7 @@ button {
 
 #foto-3 {
     width: 35rem;
-    height: 40rem;
+    height: 35rem;
     border-radius: 1rem;
     object-fit:cover;
 }
@@ -278,9 +278,9 @@ button {
 #accordion {
     display: flex;
     flex-direction: column;
-    /* flex-grow: 1; */
     gap:2rem;
     padding: 3rem;
+    width: 100% !important;
 }
 
 .header-accordion {
@@ -321,6 +321,156 @@ button {
 
 i {
     font-size: 1.5rem;
+}
+
+#portfolio {
+    background-color: var(--even-section-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem;
+    gap: 3rem;
+}
+
+#secao-portfolio-texto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    max-width: 80%;
+}
+
+#titulo-h1-foto-4, #titulo-h3-foto-4, #texto-foto-4 {
+    color: var(--even-section-text)
+}
+
+.item-portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    gap: 1rem;
+}
+
+.item-portfolio img {
+    width: 20rem;
+    height: 18rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+#itens-portfolio {
+    display: flex;
+    flex-direction: row;
+}
+
+.portfolio-titulo {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.portfolio-texto {
+    color: var(--tertiary-color);
+    font-size: 0.9rem;
+}
+
+#skills {
+    background-color: var(--odd-section-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem;
+    gap: 3rem;
+}
+
+#secao-skills-texto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    max-width: 80%;
+}
+
+#titulo-h1-foto-5, #titulo-h3-foto-5, #texto-foto-5 {
+    color: var(--odd-section-text)
+}
+
+#foto-5 {
+    width: 35rem;
+    height: 35rem;
+    border-radius: 1rem;
+    object-fit:cover;
+}
+
+#secao-skills-imagem-habilidades {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.texto-habilidades-estrelas {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.texto-habilidades {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.stars {
+    color: #f9f104FF;
+}
+
+#habilidades {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 40vw;
+}
+
+#contato {
+    background-color: var(--even-section-background);
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    text-align: left;
+    padding: 4rem;
+    gap: 3rem;
+}
+
+#secao-contato-texto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 80%;
+}
+
+#titulo-h1-foto-6, #titulo-h3-foto-6, #texto-foto-6 {
+    color: var(--even-section-text)
+}
+
+.botoes-contato {
+    width: 100%;
+    background-color: var(--even-section-button);
+    color: var(--even-section-text-button)
+}
+
+#foto-6 {
+    width: 35rem;
+    height: 35rem;
+    border-radius: 1rem;
+    object-fit:cover;
 }
 
 @media (max-width: 768px) {
@@ -376,5 +526,94 @@ i {
 
     #secao-about-texto {
         width: 100%;
+    }
+
+    #servicos {
+        flex-direction:column;
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    #secao-servicos-texto {
+        width: 100%;
+    }
+
+    #secao-servicos-imagem-accordion {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #foto-3 {
+        max-width: 80vw;
+        max-height: 40vh;
+
+    }
+
+    #itens-portfolio {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .item-portfolio {
+        width: 80%;
+    }
+
+    #secao-skills-imagem-habilidades {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #foto-5 {
+        max-width: 80vw;
+        max-height: 40vh;
+
+    }
+
+    #habilidades {
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 80vw;
+    }
+
+    .texto-habilidades-estrelas {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contato {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    #secao-contato-texto {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #foto-6 {
+        max-width: 80vw;
+        max-height: 40vh;
+
+    }
+
+    .botoes-contato {
+        width: 100%;
+    }
+
+    #secao-contato-texto a {
+        width: 100%;
+    }
+
+    #secao-contato-texto {
+        max-width: 100%;
     }
 }
