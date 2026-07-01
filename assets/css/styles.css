@@ -624,3 +624,9 @@ i {
         max-width: 100%;
     }
 }
+
+#banner {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
