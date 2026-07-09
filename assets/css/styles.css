@@ -157,9 +157,9 @@ button {
 #badges {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     padding: 3rem;
     gap: 3rem;
+    justify-content: center;
 
 }
 
@@ -356,15 +356,19 @@ i {
 }
 
 .item-portfolio img {
-    width: 20rem;
+    width: 100%;
     height: 18rem;
     object-fit: cover;
     border-radius: 1rem;
+    /* object-fit: fill */
 }
 
 #itens-portfolio {
     display: flex;
     flex-direction: row;
+    gap: 40px;
+    width: 100%;
+    align-items: start;
 }
 
 .portfolio-titulo {
@@ -623,4 +627,17 @@ i {
     #secao-contato-texto {
         max-width: 100%;
     }
+}
+
+#banner {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#banner img {
+    width: 80%;
+}
+
+.hide {
+    display: none;
 }
