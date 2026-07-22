@@ -641,3 +641,52 @@ i {
 .hide {
     display: none;
 }
+
+
+#mais-projetos{
+    background:orangered; 
+    padding: 80px 8%;
+}
+
+#secao-mais-projetos-texto{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+#mais-projetos {
+    background-color: var(--even-section-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem;
+    gap: 3rem;
+}
+
+#secao-mais-projetos-texto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    max-width: 80%;
+}
+
+
+.item-galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    gap: 1rem;
+}
+
+.item-galeria img {
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    /* object-fit: fill */
+}
+
