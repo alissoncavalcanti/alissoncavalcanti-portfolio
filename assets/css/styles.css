@@ -522,9 +522,9 @@ i {
     max-width: 80%;
 }
 
-#secao-mais-projetos-texto h3 {
+#secao-mais-projetos-texto h2 {
     color: var(--odd-section-text);
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 
