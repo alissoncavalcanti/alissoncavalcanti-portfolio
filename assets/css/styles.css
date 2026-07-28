@@ -105,6 +105,10 @@ h1 {
     font-size: 4rem;
 }
 
+h2 {
+font-size: 2rem;
+}
+
 #start {
     background-color: var(--odd-section-background);
     display: flex;
