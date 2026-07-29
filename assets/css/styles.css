@@ -452,6 +452,7 @@ i {
     text-align: left;
     padding: 4rem;
     gap: 3rem;
+    place-content: center;
 }
 
 #secao-contato-texto {
